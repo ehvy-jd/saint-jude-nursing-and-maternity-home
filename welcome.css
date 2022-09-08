@@ -55,20 +55,6 @@ body {
     color: hsl(214, 98%, 55%);
 }
 
-/*
-p {
-    letter-spacing: 0.05em;
-}
-*/
-
-/*
-@media (min-width: 18px) {
-    .site-name {
-        font-size: 30px;
-    }
-}
-*/
-
 .nav-tab {
     text-align: center;
     width: auto; 
@@ -114,13 +100,6 @@ p {
     margin-top: 0rem;
 }
 
-/*
-.image-sect-1 div {
-    display: flex;
-    width: 50%;
-    overflow: hidden;
-}*/
-
 .img-preg {
     height: auto;  
     width: 45%;
@@ -128,7 +107,6 @@ p {
     display: block;
     border: 2px solid black;
 }
-
 
 .article-sect-1 {
     display: block;
@@ -163,13 +141,6 @@ footer {
     padding: 0.1875rem;
     font-weight: bold;  
 }
-
-/*
-This removes space between footer and bottom of page...
-main {
-    min-height: 100vh;
-}
-*/
 
 @media only screen 
 and (max-width: 768px) {

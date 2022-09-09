@@ -66,17 +66,15 @@ body {
     width: 5.625rem;
     font-size: 1.125rem;
     font-weight: bold;
+    text-decoration: underline;
     color: hsl(214, 98%, 55%);
     background-color: hsl(0, 0%, 0%);
-    border-left: 1px solid hsl(0, 4%, 15%);
-    border-top: 1px solid hsl(0, 4%, 15%);
-    border-right: 2px solid hsl(0, 4%, 15%);
-    border-bottom: 1px solid hsl(0, 4%, 15%);
     cursor: pointer;
     margin: 0.125rem;
     font-family: 'nunito-font', Helvetica, Arial, sans-serif;
     transition: all 200ms ease-out;
 }
+
 .sect-1 {
     display: flex;
     flex-direction: column;
@@ -193,7 +191,7 @@ and (max-width: 768px) {
     
     .img-preg {
         height: auto;  
-        width: 60%;
+        width: 70%;
         margin: 0.625rem;
         display: block;
     }
@@ -251,7 +249,7 @@ and (max-width: 480px) {
     
     .img-preg {
         height: auto;  
-        width: 70%;
+        width: 90%;
         margin: 0.625rem;
         display: block;
     }
@@ -266,7 +264,7 @@ and (min-width: 768px) {
 
     .img-preg {
         height: auto;  
-        width: 50%;
+        width: 70%;
         margin: 0.625rem;
         display: block;
     }
@@ -287,6 +285,7 @@ and (min-width: 768px) {
 
 @media (hover: hover) {
     .nav-button:hover {
+        text-decoration: none;
         color: rgb(0, 0, 0);
         background-color: hsl(73, 98%, 55%);
         /*border: 1px solid rgb(124, 241, 232);*/  

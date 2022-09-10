@@ -79,7 +79,8 @@ nav {
     .nav-button:hover {
         color: rgb(0, 0, 0);
         background-color: hsl(73, 98%, 55%);
-        box-shadow: 0.0625rem 0.25rem hsl(73, 98%, 55%);
+        border-left: 0.5px hsl(73, 98%, 55%);
+        box-shadow: 0.0625rem 0.25rem hsl(73, 98%, 55%); 
     }
 }
 
@@ -297,3 +298,4 @@ and (min-width: 768px) {
         padding: 0%;
     }
 }
+

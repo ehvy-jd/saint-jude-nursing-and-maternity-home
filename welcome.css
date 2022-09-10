@@ -79,10 +79,7 @@ nav {
     .nav-button:hover {
         color: rgb(0, 0, 0);
         background-color: hsl(73, 98%, 55%);
-        border-bottom: 0.00625rem solid hsl(73, 98%, 55%);  
-        border-right: 0.00625rem solid hsl(73, 98%, 55%);
-        border-left: 0.00625rem solid hsl(73, 98%, 55%);
-        border-top: 0.00625rem solid hsl(73, 98%, 55%);
+        box-shadow: 0.0625rem 0.25rem hsl(73, 98%, 55%);
     }
 }
 

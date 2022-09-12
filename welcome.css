@@ -75,14 +75,14 @@ nav {
     transition: all 200ms ease-out;
 }
 
-/*@media (hover: hover) {*/
+@media (hover: hover) {
     .nav-button:hover {
         color: rgb(0, 0, 0);
         background-color: hsl(73, 98%, 55%);
         border-left: 0.5px hsl(73, 98%, 55%);
         box-shadow: 0.0625rem 0.25rem hsl(73, 98%, 55%); 
     }
-/*}*/
+}
 
 .nav-button:active {
     margin-top: 0.3125rem;

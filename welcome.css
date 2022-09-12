@@ -32,7 +32,6 @@ body {
 }
 
 .st-jude {
-    min-width: 3.75rem;
     max-width: 8.75rem;
     height: auto;
     padding: 0.01875rem 0rem 0rem 0rem;
@@ -46,16 +45,19 @@ body {
 }
 
 .site-name {
+    margin-top: 5px;
     width: auto;
     display: flex;
     flex-direction: column;
     padding: 0rem 0.625rem;
     font-size: 2rem;
     font-weight: bolder;
+    line-height: 1.2;
     color: hsl(73, 98%, 55%);
 }
 
 nav {
+    margin-top: 5px;
     height: 100%;
     display: flex;
 }
@@ -69,7 +71,7 @@ nav {
     font-weight: bold;
     color:  hsl(73, 98%, 55%);
     background-color: #022D6F;
-    box-shadow: 0.0625rem 0.25rem hsl(0, 2%, 20%);
+    box-shadow: 0.0625rem 0.25rem hsl(0, 1%, 41%);
     cursor: pointer;
     margin: 0.125rem;
     font-family: 'nunito-font', Helvetica, Arial, sans-serif;
@@ -147,7 +149,7 @@ footer {
     text-align: center;
     list-style-type: none;
     margin: 0;
-    font-size: 0.9375rem;
+    font-size: 1rem;
 }
 .contact-li {
     padding: 0.1875rem;
@@ -165,7 +167,7 @@ and (max-width: 768px) {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 30.5rem;
+        height: 29.5rem;
     }
 
     #landing > :nth-child(3) {
@@ -224,7 +226,7 @@ and (max-width: 480px) {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 30.5rem;
+        height: 29.5rem;
     }
 
     #landing > :nth-child(3) {

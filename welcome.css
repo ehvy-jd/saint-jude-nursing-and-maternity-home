@@ -15,7 +15,7 @@ html {
   }
 
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: hsl(0, 0%, 100%);
     font-family: "nunito-font", sans-serif;
 }
 
@@ -23,7 +23,7 @@ body {
     display: flex;
     width: 100%;
     height: 100%;
-    background-color: #022D6F;
+    background-color: hsl(216, 96%, 22%);
 }
 
 #landing > :nth-child(3) {
@@ -39,7 +39,7 @@ body {
 
 .rectangle-shape {
     width: 0.3125rem;
-    background-color:#ccfd1c;
+    background-color:hsl(73, 98%, 55%);
     padding: 0rem 0.25rem;
     height: auto;
 }
@@ -63,14 +63,14 @@ nav {
 }
 
 .nav-button {
-    border-color: #022D6F;
+    border-color: hsl(216, 96%, 22%);
     border-radius: 0.3125rem;
     height: 3.125rem;
     width: 5.625rem;
     font-size: 1.125rem;
     font-weight: bold;
     color:  hsl(73, 98%, 55%);
-    background-color: #022D6F;
+    background-color: hsl(216, 96%, 22%);
     box-shadow: 0.0625rem 0.25rem hsl(0, 1%, 41%);
     cursor: pointer;
     margin: 0.125rem;
@@ -80,7 +80,7 @@ nav {
 
 @media (hover: hover) {
     .nav-button:hover {
-        color: rgb(0, 0, 0);
+        color: hsl(0, 0%, 0%);
         background-color: hsl(73, 98%, 55%);
         border-left: 0.5px hsl(73, 98%, 55%);
         box-shadow: 0.0625rem 0.25rem hsl(73, 98%, 55%); 
@@ -119,7 +119,7 @@ nav {
     width: 45%;
     margin: 0.625rem;
     display: block;
-    border: 0.125rem solid black;
+    border: 0.125rem solid hsl(0, 0%, 0%);
 }
 
 .article-sect-1 {
@@ -138,7 +138,7 @@ nav {
 
 footer {
     color: rgb(204, 253, 28);
-    background-color: #022D6F;
+    background-color: hsl(216, 96%, 22%);
     left: 0;
     bottom: 0;
     width: 100%;

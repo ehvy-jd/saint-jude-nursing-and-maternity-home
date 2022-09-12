@@ -15,7 +15,7 @@ html {
   }
 
 body {
-    background-color: hsl(0, 0%, 100%);
+    background-color: hsl(216, 96%, 90%);
     font-family: "nunito-font", sans-serif;
 }
 
@@ -39,7 +39,7 @@ body {
 
 .rectangle-shape {
     width: 0.3125rem;
-    background-color:hsl(73, 98%, 55%);
+    background-color:hsl(59, 98%, 55%);
     padding: 0rem 0.25rem;
     height: auto;
 }
@@ -53,7 +53,7 @@ body {
     font-size: 2rem;
     font-weight: bolder;
     line-height: 1.2;
-    color: hsl(73, 98%, 55%);
+    color: hsl(59, 98%, 55%);
 }
 
 nav {
@@ -69,7 +69,7 @@ nav {
     width: 5.625rem;
     font-size: 1.125rem;
     font-weight: bold;
-    color:  hsl(73, 98%, 55%);
+    color:  hsl(59, 98%, 55%);
     background-color: hsl(216, 96%, 22%);
     box-shadow: 0.0625rem 0.25rem hsl(0, 1%, 41%);
     cursor: pointer;
@@ -81,9 +81,9 @@ nav {
 @media (hover: hover) {
     .nav-button:hover {
         color: hsl(0, 0%, 0%);
-        background-color: hsl(73, 98%, 55%);
-        border-left: 0.5px hsl(73, 98%, 55%);
-        box-shadow: 0.0625rem 0.25rem hsl(73, 98%, 55%); 
+        background-color: hsl(59, 98%, 55%);
+        border-left: 0.5px hsl(59, 98%, 55%);
+        box-shadow: 0.0625rem 0.25rem hsl(59, 98%, 55%); 
     }
 }
 
@@ -137,7 +137,7 @@ nav {
 }
 
 footer {
-    color: rgb(204, 253, 28);
+    color: hsl(59, 98%, 55%);
     background-color: hsl(216, 96%, 22%);
     left: 0;
     bottom: 0;
@@ -179,7 +179,7 @@ and (max-width: 768px) {
         justify-items: center;
         align-items: center;
         width: 100%;
-        border-bottom: 2px solid hsl(73, 98%, 55%);
+        border-bottom: 2px solid hsl(59, 98%, 55%);
     }
 
     .site-name h2 {
@@ -238,7 +238,7 @@ and (max-width: 480px) {
         justify-items: center;
         align-items: center;
         width: 100%;
-        border-bottom: 2px solid hsl(73, 98%, 55%);
+        border-bottom: 2px solid hsl(59, 98%, 55%);
     }
 
     .site-name h2 {

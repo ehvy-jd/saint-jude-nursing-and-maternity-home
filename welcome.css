@@ -126,7 +126,7 @@ nav {
   justify-content: space-evenly;
   width: 70%;
   height: auto;
-  margin: 3.75rem auto;
+  margin: 1.75rem auto;
 }
 
 .image-sect-1 .upper {
@@ -151,7 +151,7 @@ nav {
   position: relative;
   font-size: 1.5rem;
   margin: auto;
-  padding: 2.5rem 0rem;
+  padding: 1rem 0rem;
   text-align: center;
   min-height: 1.25rem;
   color: #000000;
@@ -271,7 +271,7 @@ footer {
   }
 
   .banner-note {
-    width: 70%;
+    width: 90%;
   }
 
   .sect-1 {
@@ -288,7 +288,8 @@ footer {
   .intro-note {
     font-size: 1.5rem;
     text-align: center;
-    padding: 0%;
+    padding: 4%;
+    width: 60%;
   }
 
   .image-sect-1 {
@@ -306,6 +307,9 @@ footer {
 @media only screen and (max-width: 320px) {
   .site-name h2 {
     margin: 0rem;
+  }
+  .intro-note {
+    width: 80%;
   }
 }
 
@@ -331,6 +335,6 @@ footer {
   .intro-note {
     font-size: 1.5rem;
     text-align: center;
-    padding: 0%;
+    padding: 4%;
   }
 }

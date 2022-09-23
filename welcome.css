@@ -96,7 +96,6 @@ nav {
 
 .banner {
   width: 100%;
-  height: auto;
   background-color: #152137;
 }
 
@@ -173,7 +172,7 @@ footer {
   text-align: center;
   list-style-type: none;
   margin: 0;
-  font-size: 1rem;
+  font-size: 0.75rem;
 }
 .contact-li {
   padding: 0.1875rem;

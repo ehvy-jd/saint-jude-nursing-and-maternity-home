@@ -149,14 +149,24 @@ nav {
 
 .intro-note {
   position: relative;
-  font-size: 1.5rem;
-  margin: auto;
+  font-size: 1.2rem;
+  margin-left: 40px;
   padding: 4% 0%;
-  text-align: center;
   min-height: 1.25rem;
   color: #000000;
-  width: 40%;
+  width: 100%;
   font-style: italic;
+}
+
+.intro-note li {
+  list-style-type: square;
+}
+
+.intro-note h3 {
+  padding-bottom: 20px;
+  font-size: 28px;
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 footer {

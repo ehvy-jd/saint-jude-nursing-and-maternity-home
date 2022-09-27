@@ -169,7 +169,7 @@ nav {
   font-weight: bold;
 }
 
-footer {
+#foot {
   position: relative;
   color: #d6f5ff;
   background-color: #152137;
@@ -177,11 +177,12 @@ footer {
   bottom: 0;
   width: 100%;
   padding: 1.25rem;
-  height: 150px;
+  height: 130px;
 }
 
-.notice {
+#notice {
   position: fixed;
+  display: "inline-block";
   bottom: 0;
   left: 0;
   text-align: center;
@@ -191,6 +192,18 @@ footer {
   background-color: #152137;
   width: 100%;
   z-index: 100;
+}
+
+#notice-button {
+  color: black;
+  background-color: yellow;
+  padding: 2px 4px;
+  border-color: yellow;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-left: 10px;
+  cursor: pointer;
 }
 
 #li-foot {

@@ -96,7 +96,13 @@
       <div id="notice">
         <h5>
           The Home is tempoarilly closed and under renovation.
-          <button id="notice-button" onclick="remove(this.parentNode.parentNode)">Close</button>
+          <button
+            id="notice-button"
+            onclick="remove(this.parentNode.parentNode); footHeight(document.getElementById('foot'))"
+            title="Close notification"
+          >
+            Close
+          </button>
         </h5>
       </div>
       <ul id="li-foot">

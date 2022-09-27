@@ -9,5 +9,3 @@ const remove = (notice) => {
 const footHeight = (ft) => {
   ft.style.height = "auto";
 };
-
-

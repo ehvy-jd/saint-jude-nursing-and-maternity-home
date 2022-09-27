@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0," />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="welcome.css" />
+    <script src="script.js"></script>
     <title>ST. JUDE NURSING AND MATERNITY HOME</title>
   </head>
   <body>
@@ -91,9 +92,12 @@
         </div>
       </div>
     </main>
-    <footer>
-      <div class="notice">
-        <h5>The Home is tempoarilly closed and under renovation.</h5>
+    <footer id="foot">
+      <div id="notice">
+        <h5>
+          The Home is tempoarilly closed and under renovation.
+          <button id="notice-button" onclick="remove(this.parentNode.parentNode)">Close</button>
+        </h5>
       </div>
       <ul id="li-foot">
         <li class="contact-li">

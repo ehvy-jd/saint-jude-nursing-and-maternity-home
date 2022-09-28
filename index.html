@@ -1,134 +1,418 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0," />
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="welcome.css" />
-    <script src="script.js"></script>
-    <title>ST. JUDE NURSING AND MATERNITY HOME</title>
-  </head>
-  <body>
-    <header id="landing">
-      <img
-        class="st-jude"
-        src="images/IMG-20220816-WA0013.jpg"
-        alt="ST. JUDE"
-      />
-      <div class="rectangle-shape"></div>
-      <div class="site-name">
-        <h2>ST.</h2>
-        <h2>JUDE</h2>
-        <h2>NURSING</h2>
-        <h2>AND</h2>
-        <h2>MATERNITY HOME</h2>
-      </div>
-      <nav>
-        <div>
-          <button
-            class="nav-button"
-            onclick="window.location.href='#article-sect-1'"
-          >
-            Services
-          </button>
-        </div>
-        <div>
-          <button class="nav-button">Apps</button>
-        </div>
-        <div>
-          <button class="nav-button" onclick="window.location.href='#li-foot'">
-            Contact
-          </button>
-        </div>
-      </nav>
-    </header>
-    <main id="main-body">
-      <div class="banner">
-        <h2 class="banner-note">
-          "We provide care for everyone who walk through our door especially,
-          the pregnant".
-        </h2>
-      </div>
-      <div class="slideshow-container">
-        <div class="mySlides fade">
-          <img src="images/main-image-1.jpg" class="img-preg" />
-        </div>
+* {
+  box-sizing: border-box;
+}
 
-        <div class="mySlides fade">
-          <img src="images/main-image-2.jpg" class="img-preg" />
-        </div>
+html {
+  font-size: 16px;
+}
 
-        <div class="mySlides fade">
-          <img src="images/main-image-3.jpg" class="img-preg" />
-        </div>
-      </div>
-      <br />
+@font-face {
+  font-family: "nunito-font";
+  src: url("fonts/nunito/nunito-v25-latin-regular.woff2") format("woff2"),
+    url("fonts/nunito/nunito-v25-latin-regular.woff") format("woff"),
+    url("fonts/nunito/nunito-v25-latin-regular.ttf") format("truetype");
+  font-display: swap;
+}
 
-      <div style="text-align: center">
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-      </div>
-      <div id="article-sect-1">
-        <article class="intro-note">
-          <h3>Services</h3>
-          <ul>
-            <li>Nursing and Maternity care</li>
-            <li>Treatment of minor ailments</li>
-            <li>First aid</li>
-            <li>Suturing and Dressing of wounds</li>
-            <li>Physical routine check-up and examination of vital signs</li>
-            <li>Antenatal and Postnatal care</li>
-            <li>Counseling</li>
-            <li>Routine Urinalysis</li>
-          </ul>
-        </article>
-      </div>
-    </main>
-    <footer id="foot">
-      <div id="notice">
-        <h5>
-          The Home is tempoarilly closed and under renovation.
-          <button
-            id="notice-button"
-            onclick="remove(this.parentNode.parentNode); footHeight(document.getElementById('foot'))"
-            title="Close notification"
-          >
-            Close
-          </button>
-        </h5>
-      </div>
-      <ul id="li-foot">
-        <li class="contact-li">
-          <h4>ADDRESS: 14 DBS Road Asaba, Delta State, Nigeria</h4>
-        </li>
-        <li class="contact-li"><h4>EMAIL: st.judenmh@gmail.com</h4></li>
-        <li class="contact-li"><h4>PHONE: +234 803 490 7128</h4></li>
-      </ul>
-    </footer>
+body {
+  background-color: hsl(0, 0%, 89%);
+  font-family: "nunito-font", sans-serif;
+}
 
-    <script>
-      let slideIndex = 0;
-      const showSlides = () => {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("dot");
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {
-          slideIndex = 1;
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-        setTimeout(showSlides, 4000);
-      }
-      showSlides(); 
-    </script>
-  </body>
-</html>
+#landing {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: #d6f5ff;
+}
+
+#landing > :nth-child(3) {
+  margin-right: auto;
+  /*This code moves selected child to the right*/
+}
+
+.st-jude {
+  max-width: 8.75rem;
+  height: auto;
+  padding: 0.01875rem 0rem 0rem 0rem;
+}
+
+.rectangle-shape {
+  width: 0.3125rem;
+  background-color: #152137;
+  padding: 0rem 0.25rem;
+  height: auto;
+}
+
+.site-name {
+  margin-top: 5px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 0.625rem;
+  font-size: 2rem;
+  font-weight: bolder;
+  line-height: 1.2;
+  color: #152137;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+nav {
+  margin-top: 0.3125rem;
+  margin-right: 0.125rem;
+  height: 100%;
+  display: flex;
+}
+
+.nav-button {
+  border-color: #ffffff;
+  border-left: 0.5px #152137;
+  border-radius: 0.3125rem;
+  height: 3.125rem;
+  width: 5.625rem;
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: hsl(0, 0%, 100%);
+  background-color: #152137;
+  box-shadow: 0.0625rem 0.25rem #152137;
+  cursor: pointer;
+  margin: 0.125rem;
+  font-family: "nunito-font", Helvetica, Arial, sans-serif;
+  transition: all 200ms ease-out;
+}
+
+@media (hover: hover) {
+  .nav-button:hover {
+    color: hsl(0, 0%, 100%);
+    text-shadow: 2px 2px 4px #ffffff;
+    font-size: 1.2rem;
+  }
+}
+
+.nav-button:active {
+  margin-top: 0.3125rem;
+  box-shadow: 0rem 0rem;
+}
+
+.banner {
+  width: 100%;
+  background-color: #152137;
+  margin-bottom: 30px;
+}
+
+.banner-note {
+  font-size: 1.8em;
+  margin: 0 auto;
+  font-weight: bold;
+  padding: 2.5rem 0rem;
+  text-align: center;
+  min-height: 1.25rem;
+  color: #ffffff;
+  width: 40%;
+  font-style: italic;
+}
+
+.mySlides {
+  display: none;
+}
+.img-preg {
+  vertical-align: middle;
+  width: 100%;
+  height: 500px;
+  border: 0.125rem solid hsl(0, 0%, 0%);
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 60%;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#article-sect-1 {
+  display: block;
+  width: 100%;
+  background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('./images/services-background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-top: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+  margin-top: 50px;
+}
+
+.intro-note {
+  position: relative;
+  font-size: 1.2rem;
+  margin-left: 40px;
+  padding: 4% 0%;
+  min-height: 1.25rem;
+  color: #000000;
+  width: 80%;
+  font-style: italic;
+  opacity: 1 !important;
+}
+
+.intro-note li {
+  list-style-type: square;
+}
+
+.intro-note h3 {
+  padding-bottom: 20px;
+  font-size: 28px;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+#foot {
+  position: relative;
+  color: #d6f5ff;
+  background-color: #152137;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 1.25rem;
+  height: 150px;
+}
+
+#notice {
+  position: fixed;
+  display: "inline-block";
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  padding: 10px 0px;
+  height: auto;
+  color: #d6f5ff;
+  background-color: #152137;
+  width: 100%;
+  z-index: 100;
+}
+
+#notice-button {
+  color: black;
+  background-color: yellow;
+  padding: 2px 4px;
+  border-color: yellow;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+#li-foot {
+  text-align: center;
+  list-style-type: none;
+  margin: 0;
+  font-size: 0.75rem;
+}
+.contact-li {
+  padding: 0.1875rem;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+  .rectangle-shape {
+    width: 100%;
+    height: 4rem;
+  }
+
+  #landing {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 29.5rem;
+  }
+
+  #landing > :nth-child(3) {
+    margin-right: 0%;
+  }
+
+  .site-name {
+    flex-wrap: wrap;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    border-bottom: 2px solid #152137;
+  }
+
+  .site-name h2 {
+    margin: 0rem 0.25rem;
+  }
+
+  .banner-note {
+    width: 70%;
+  }
+
+  #article-sect-1 {
+    display: flex;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .intro-note {
+    font-size: 1.2rem;
+    padding: 4% 0%;
+  }
+
+  .img-preg {
+    width: 100%;
+    height: 400px;
+    margin: 0.625rem;
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .rectangle-shape {
+    width: 100%;
+    height: 4rem;
+  }
+
+  #landing {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 29.5rem;
+  }
+
+  #landing > :nth-child(3) {
+    margin-right: 0%;
+  }
+
+  .site-name {
+    flex-wrap: wrap;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    border-bottom: 2px solid #152137;
+  }
+
+  .site-name h2 {
+    margin: 0rem 0.25rem;
+  }
+
+  .banner-note {
+    width: 90%;
+  }
+
+  .slideshow-container {
+    max-width: 90%;
+    margin-left: 10px;
+  }
+
+  #article-sect-1 {
+    display: flex;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .intro-note {
+    font-size: 1.2rem;
+    padding: 4% 0%;
+    width: 100%;
+  }
+
+  .img-preg {
+    width: 100%;
+    height: 350px;
+    margin: 0.625rem;
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .slideshow-container {
+    max-width: 90%;
+    margin-right: 25px;
+  }
+
+  .img-preg {
+    height: 200px;
+  }
+
+  .site-name h2 {
+    margin: 0rem;
+    font-size: 1.8rem;
+  }
+  .intro-note {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  .slideshow-container {
+    max-width: 80%;
+  }
+
+ .img-preg {
+    width: 100%;
+    margin: 0.625rem;
+    display: block;
+  }
+
+  #article-sect-1 {
+    display: flex;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .intro-note {
+    font-size: 1.2rem;
+    padding: 4% 0%;
+  }
+}

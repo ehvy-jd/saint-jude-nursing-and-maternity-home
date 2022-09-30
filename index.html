@@ -6,10 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0," />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="welcome.css" />
-    <script src="script.js"></script>
     <title>ST. JUDE NURSING AND MATERNITY HOME</title>
   </head>
   <body>
+    <div id="scroll-header">
+      <div class="logo-container"></div>
+      <nav class="scroll-nav">
+        <ul>
+          <li>
+            <a href="#article-sect-1">Services </a>
+          </li>
+          <li>
+            <a href="#apps">Apps</a>
+          </li>
+          <li>
+            <a href="#li-foot"> Contact </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <header id="landing">
       <img
         class="st-jude"
@@ -34,7 +49,9 @@
           </button>
         </div>
         <div>
-          <button class="nav-button">Apps</button>
+          <button class="nav-button" onclick="window.location.href='#apps'">
+            Apps
+          </button>
         </div>
         <div>
           <button class="nav-button" onclick="window.location.href='#li-foot'">
@@ -56,11 +73,19 @@
         </div>
 
         <div class="mySlides fade">
-          <img src="images/main-image-2.jpg" class="img-preg" alt="A pregnant lady" />
+          <img
+            src="images/main-image-2.jpg"
+            class="img-preg"
+            alt="A pregnant lady"
+          />
         </div>
 
         <div class="mySlides fade">
-          <img src="images/main-image-3.jpg" class="img-preg" alt="A pregnant lady" />
+          <img
+            src="images/main-image-3.jpg"
+            class="img-preg"
+            alt="A pregnant lady"
+          />
         </div>
       </div>
       <br />
@@ -85,6 +110,35 @@
           </ul>
         </article>
       </div>
+      <div id="apps">
+        <div id="bmi-form-container">
+          <div class="bmi-form">
+            <h3>BMI CALCULATOR (Metric)</h3>
+            <h4>
+              Calculate your Body mass Index(<a
+                href="http://en.wikipedia.org/wiki/Body_mass_index"
+                target="_blank"
+                rel="noopener noreferrer"
+                >BMI</a
+              >) below.
+            </h4>
+            <hr />
+            <label> Body Weight in kilogram: </label>
+            <br />
+            <input type="number" name="Weight" id="weight" placeholder="0.00" />
+            <br />
+            <label> Body Height in centimeter: </label>
+            <br />
+            <input type="number" name="height" id="height" placeholder="0.00" />
+            <br />
+            <button id="bmi-submit">Submit</button>
+            <div id="bmi-div">
+              <p id="bmi-result"></p>
+              <button id="bmi-reset">Reset</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <footer id="foot">
       <div id="notice">
@@ -101,35 +155,13 @@
       </div>
       <ul id="li-foot">
         <li class="contact-li">
-          <h4>ADDRESS: 14 DBS Road Asaba, Delta State, Nigeria</h4>
+          <h5>ADDRESS: 14 DBS Road Asaba, Delta State, Nigeria</h5>
         </li>
         <li class="contact-li"><h4>EMAIL: st.judenmh@gmail.com</h4></li>
         <li class="contact-li"><h4>PHONE: +234 803 490 7128</h4></li>
       </ul>
     </footer>
-
-    <script>
-      let slideIndex = 0;
-      const showSlides = () => {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("dot");
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {
-          slideIndex = 1;
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-        setTimeout(showSlides, 4000); // Change image every 2 seconds
-      }
-      showSlides();
-      
-    </script>
+    <script src="main.js"></script>
+    <script src="bmi.js"></script>
   </body>
 </html>

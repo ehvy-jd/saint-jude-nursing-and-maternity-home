@@ -48,11 +48,67 @@ body {
   display: inline-block;
   font-size: 1.3rem;
   font-weight: bold;
-  padding: 6px 10px 10px 10px;
+  padding: 6px 0px 10px 10px;
 }
 
 .scroll-nav li a {
   color: #152137;
+}
+
+#nav-toggle {
+  background-color: transparent;
+  border: 2px solid transparent;
+  cursor: pointer;
+  position: relative;
+}
+
+.nav-toggle:hover {
+  background-color: #95bafa;
+}
+
+#dropdown-nav {
+  margin-right: 1000;
+  z-index: 100;
+  background-color: #d6f5ff;
+  display: none;
+  position: absolute;
+  margin-top: 49px;
+  width: 100%;
+  
+}
+
+.drop-nav {
+  height: 9.375rem;
+  text-align: center;
+  margin: 0 45%;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.drop-nav li {
+  list-style: none;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.drop-nav a {
+  color: #152137;
+  text-decoration: none;
+}
+
+.drop-nav a:hover {
+  color: #152137;
+  text-decoration: underline;
+}
+
+.hamburger {
+  display: block;
+  position: relative;
+  width: 40px;
+  height: 6px;
+  background-color: #152137;
+  margin-bottom: 5px;
+  display: none;
 }
 
 #landing {
@@ -129,7 +185,7 @@ nav {
   box-shadow: 0rem 0rem;
 }
 
-.banner {
+#banner {
   width: 100%;
   background-color: #152137;
   margin-bottom: 30px;
@@ -157,14 +213,12 @@ nav {
   border: 0.125rem solid hsl(0, 0%, 0%);
 }
 
-/* Slideshow container */
 .slideshow-container {
   max-width: 60%;
   position: relative;
   margin: auto;
 }
 
-/* Caption text */
 .text {
   color: #f2f2f2;
   font-size: 15px;
@@ -175,7 +229,6 @@ nav {
   text-align: center;
 }
 
-/* Number text (1/3 etc) */
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
@@ -184,7 +237,6 @@ nav {
   top: 0;
 }
 
-/* The dots/bullets/indicators */
 .dot {
   height: 15px;
   width: 15px;
@@ -199,7 +251,6 @@ nav {
   background-color: #717171;
 }
 
-/* Fading animation */
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
@@ -376,6 +427,14 @@ nav {
 }
 
 @media only screen and (max-width: 768px) {
+  .scroll-nav li{
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
   .rectangle-shape {
     width: 100%;
     height: 4rem;
@@ -429,6 +488,10 @@ nav {
 }
 
 @media only screen and (max-width: 480px) {
+  .drop-nav {
+    margin: 0 42%;
+  }
+
   .rectangle-shape {
     width: 100%;
     height: 4rem;
@@ -488,6 +551,22 @@ nav {
 }
 
 @media only screen and (max-width: 320px) {
+  .drop-nav {
+    margin: 0 38%;
+  }
+
+  #dropdown-nav {
+    margin-top: 4px;
+  }
+
+  #landing {
+    height: 28.3rem;
+  }
+
+  .scroll-nav {
+    height: 40px;
+  }
+
   .slideshow-container {
     max-width: 90%;
     margin-right: 25px;

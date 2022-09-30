@@ -33,6 +33,9 @@ const showSlides = () => {
 };
 showSlides();
 
+
+/*
+
 // Scroll header handler
 let scrollDown = document.getElementById("scroll-header");
 let mainHeader = document.getElementById("landing");
@@ -47,3 +50,4 @@ window.addEventListener(
   })
 );
 
+*/

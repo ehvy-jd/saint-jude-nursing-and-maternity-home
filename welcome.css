@@ -550,6 +550,12 @@ nav {
   }
 }
 
+@media only screen and (max-width: 425px) {
+  .drop-nav {
+    margin: 0 40%;
+  }
+}
+
 @media only screen and (max-width: 320px) {
   .drop-nav {
     margin: 0 38%;

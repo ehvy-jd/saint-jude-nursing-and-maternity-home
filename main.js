@@ -33,21 +33,32 @@ const showSlides = () => {
 };
 showSlides();
 
-
-/*
-
 // Scroll header handler
 let scrollDown = document.getElementById("scroll-header");
 let mainHeader = document.getElementById("landing");
+
 window.addEventListener(
   "scroll",
   (showMiniHeader = () => {
-    if (window.scrollY > 10) {
+    let offHeight = mainHeader.offsetHeight;
+    if (window.scrollY > offHeight - 50) {
       scrollDown.style.display = "flex";
     } else {
       scrollDown.style.display = "none";
+      dropNav.style.display = "none";
     }
   })
 );
 
-*/
+let dropNav = document.getElementById("dropdown-nav");
+let navToggle = document.getElementById("nav-toggle");
+
+let dropDownMenu = () => {
+  if (dropNav.style.display === "none") {
+    dropNav.style.display = "block";
+  } else {
+    dropNav.style.display = "none";
+  }
+};
+
+navToggle.addEventListener("click", dropDownMenu);

@@ -8,10 +8,9 @@ let calculateBmi = () => {
   let weight = document.getElementById("weight").value;
   let height = document.getElementById("height").value;
   let bmi = (weight / (height / 100) ** 2).toFixed(2);
+  let superScript = "\u00B2";
 
-  let superScript = "<sup>2</sup>";
-
-  if (bmi < 18.5) {
+  if (bmi <= 18.4) {
     bmiDiv.style.display = "block";
     bmiResult.innerHTML =
       "Your BMI is " +
@@ -19,9 +18,7 @@ let calculateBmi = () => {
       "kg/m" +
       superScript +
       ".<br> According to the World Health Organisation recommendations on Body Mass Index, your bmi falls under the underweight category.";
-  }
-
-  else if (bmi >= 18.5 && bmi <= 24.9) {
+  } else if (bmi >= 18.5 && bmi <= 24.9) {
     bmiDiv.style.display = "block";
     bmiResult.innerHTML =
       "Your BMI is " +
@@ -29,9 +26,7 @@ let calculateBmi = () => {
       "kg/m" +
       superScript +
       ".<br> According to the World Health Organisation recommendations on Body Mass Index, your bmi falls under the normal weight category.";
-  }
-
-  else if (bmi >= 25 && bmi <= 29.9) {
+  } else if (bmi >= 25 && bmi <= 29.9) {
     bmiDiv.style.display = "block";
     bmiResult.innerHTML =
       "Your BMI is " +
@@ -39,9 +34,7 @@ let calculateBmi = () => {
       "kg/m" +
       superScript +
       ".<br> According to the World Health Organisation recommendations on Body Mass Index, your bmi falls under the Pre-Obese category.";
-  }
-
-  else {
+  } else if (bmi > 30) {
     bmiDiv.style.display = "block";
     bmiResult.innerHTML =
       "Your BMI is " +
@@ -49,6 +42,8 @@ let calculateBmi = () => {
       "kg/m" +
       superScript +
       ".<br> According to the World Health Organisation recommendations on Body Mass Index, your bmi falls under the Obese category.";
+  } else {
+    alert(`Fill in your values`);
   }
 };
 

@@ -14,6 +14,9 @@
       <nav class="scroll-nav">
         <ul>
           <li>
+            <a href="#landing">Top </a>
+          </li>
+          <li>
             <a href="#article-sect-1">Services </a>
           </li>
           <li>
@@ -25,20 +28,23 @@
         </ul>
       </nav>
       <button id="nav-toggle">
-        <span class="hamburger"></span><span class="hamburger"></span
-        ><span class="hamburger"></span>
+        <span id="ham-one"></span><span id="ham-two"></span
+        ><span id="ham-three"></span>
       </button>
       <div id="dropdown-nav">
         <nav class="drop-nav">
           <ul>
             <li>
-              <a href="#article-sect-1">Services </a>
+              <a href="#landing">Top </a>
+            </li>
+            <li>
+              <a href="#article-sect-1">Services</a>
             </li>
             <li>
               <a href="#apps">Apps</a>
             </li>
             <li>
-              <a href="#li-foot"> Contact </a>
+              <a href="#li-foot">Contact</a>
             </li>
           </ul>
         </nav>
@@ -106,6 +112,14 @@
             alt="A pregnant lady"
           />
         </div>
+
+        <div class="mySlides fade">
+          <img
+            src="images/main-image-5.jpg"
+            class="img-preg"
+            alt="A pregnant lady"
+          />
+        </div>
       </div>
       <br />
 
@@ -113,47 +127,145 @@
         <span class="dot"></span>
         <span class="dot"></span>
         <span class="dot"></span>
+        <span class="dot"></span>
       </div>
       <div id="article-sect-1">
         <article class="intro-note">
           <h3>Services</h3>
+          <hr />
           <ul>
             <li>Nursing and Maternity care</li>
+            <hr />
             <li>Treatment of minor ailments</li>
+            <hr />
             <li>First aid</li>
+            <hr />
             <li>Suturing and Dressing of wounds</li>
+            <hr />
             <li>Physical routine check-up and examination of vital signs</li>
+            <hr />
             <li>Antenatal and Postnatal care</li>
+            <hr />
             <li>Counseling</li>
+            <hr />
             <li>Routine Urinalysis</li>
+            <hr>
           </ul>
         </article>
       </div>
-      <div id="apps">
-        <div id="bmi-form-container">
-          <div class="bmi-form">
-            <h3>BMI CALCULATOR (Metric)</h3>
-            <h4>
-              Calculate your Body mass Index(<a
-                href="http://en.wikipedia.org/wiki/Body_mass_index"
-                target="_blank"
-                rel="noopener noreferrer"
-                >BMI</a
-              >) below.
-            </h4>
-            <hr />
-            <label> Body Weight in kilogram: </label>
-            <br />
-            <input type="number" name="Weight" id="weight" placeholder="0.00" />
-            <br />
-            <label> Body Height in centimeter: </label>
-            <br />
-            <input type="number" name="height" id="height" placeholder="0.00" />
-            <br />
-            <button id="bmi-submit">Submit</button>
-            <div id="bmi-div">
-              <p id="bmi-result"></p>
-              <button id="bmi-reset">Reset</button>
+      <div id="apps-container">
+        <h2 id="apps">Calculator App Section</h2>
+        <div id="preg-due-date">
+          <h3>Due Date Calculator</h3>
+          <h4>Find out when your baby is due</h4>
+          <label for="birthday" class="last-p"
+            >Date for the first day of your last period</label
+          >
+          <br />
+          <input type="date" id="lmp" name="lmp" min="2010-01-01" />
+          <br />
+          <button id="due-date-submit">Calculate</button>
+          <div id="due-date-div">
+            <p id="due-date-result"></p>
+            <button id="due-date-reset">Reset</button>
+          </div>
+        </div>
+        <div id="bmi-container">
+          <div id="bmi-toggle">
+            <h3>BMI CALCULATOR</h3>
+            <label>Standard</label>
+            <label class="bmi-switch"
+              ><input type="checkbox" id="bmi-switch" />
+              <span class="slider round"></span
+            ></label>
+            <label>Metric</label>
+          </div>
+          <div id="bmi-form-container-metric">
+            <div class="bmi-form">
+              <div>
+                <h3>Metric</h3>
+              <h4>
+                Calculate your Body mass Index(<a
+                  href="http://en.wikipedia.org/wiki/Body_mass_index"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >BMI</a
+                >) below.
+              </h4>
+              </div>
+              <div class="bmi-labels">
+                <label class="bmi-labels"> Body Weight in kilograms</label>
+              <br />
+              <input
+                type="number"
+                name="Weight"
+                id="weight"
+                placeholder="0.0"
+              />
+              <br />
+              <label> Body Height in centimeters</label>
+              <br />
+              <input
+                type="number"
+                name="height"
+                id="height"
+                placeholder="0.0"
+              />
+              <br />
+              <button id="bmi-submit">Calculate</button>
+              </div>
+              <div id="bmi-div">
+                <p id="bmi-result"></p>
+                <button id="bmi-reset">Reset</button>
+              </div>
+            </div>
+          </div>
+          <div id="bmi-form-container-standard">
+            <div class="bmi-form">
+              <div>
+                <h3>Standard</h3>
+              <h4>
+                Calculate your Body mass Index(<a
+                  href="http://en.wikipedia.org/wiki/Body_mass_index"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >BMI</a
+                >) below.
+              </h4>
+              </div>
+              <div class="bmi-labels">
+                <label class="bmi-labels"> Body Weight in pounds</label>
+              <br />
+              <input
+                type="number"
+                name="Weight"
+                id="weight-s"
+                placeholder="0.0"
+              />
+              <br />
+              <label> Body Height in feet and inches</label>
+              <br />
+              <label>ft: </label>
+              <input
+                type="number"
+                name="height"
+                id="height-ft-s"
+                placeholder="0"
+              />
+              <label>in: </label>
+              <input
+                type="number"
+                name="height"
+                id="height-in-s"
+                placeholder="0"
+              />
+              <br />
+              <button id="bmi-submit-s">Calculate</button>
+              </div>
+              <div id="bmi-div-s">
+                <p id="bmi-result-s"></p>
+                <button id="bmi-reset-s">Reset</button>
+              </div>
             </div>
           </div>
         </div>
@@ -181,6 +293,7 @@
       </ul>
     </footer>
     <script src="main.js"></script>
+    <script src="due-date-calc.js"></script>
     <script src="bmi.js"></script>
   </body>
 </html>

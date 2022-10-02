@@ -341,7 +341,7 @@ nav {
   font-weight: bold;
 }
 
-#apps-container{
+#apps-container {
   background-color: hsl(0, 0%, 89%);
   padding: 5% 0%;
 }
@@ -354,11 +354,15 @@ nav {
   color: #152137;
 }
 
+input {
+  background-color: #ffffff;
+}
+
 /* Due date calculator*/
 #preg-due-date {
   border: 2px solid #152137;
   text-align: center;
-  margin: 1% 10% 5% 10%;
+  margin: 1% 20% 5% 20%;
   background-color: #d6f5ff;
   color: #152137;
   border-radius: 0.5rem 0.5rem;
@@ -376,6 +380,7 @@ nav {
 #preg-due-date h4 {
   font-size: 22px;
   padding: 10px 0;
+  line-height: 1;
 }
 
 #lmp {
@@ -434,7 +439,7 @@ nav {
   text-align: center;
   position: relative;
   width: auto;
-  margin: 1rem 10% 0 10%;
+  margin: 1rem 20% 0 20%;
   background-color: #152137;
   border-radius: 0.5rem 0.5rem 0 0;
   font-size: 24px;
@@ -498,7 +503,7 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-.bmi-form div {
+.bmi-divider {
   border-bottom: 2px solid #152137; /* BMI calcutator header divider */
 }
 
@@ -509,7 +514,7 @@ input:checked + .slider:before {
 /* Body mass index calculator section */
 #bmi-form-container-metric {
   text-align: center;
-  margin: 0 10% 0% 10%;
+  margin: 0 20% 0% 20%;
   border: 2px solid #152137;
   background-color: #d6f5ff;
   border-radius: 0 0 0.5rem 0.5rem;
@@ -518,7 +523,7 @@ input:checked + .slider:before {
 
 #bmi-form-container-standard {
   text-align: center;
-  margin: 0 10% 0% 10%;
+  margin: 0 20% 0% 20%;
   border: 2px solid #152137;
   background-color: #d6f5ff;
   border-radius: 0 0 0.5rem 0.5rem;
@@ -699,6 +704,27 @@ input:checked + .slider:before {
   font-weight: bold;
 }
 
+@media only screen and (max-width: 1024px) {
+  /* Slider images */
+  .slideshow-container {
+    max-width: 70%;
+  }
+
+  .img-preg {
+    width: 100%;
+    height: 400px;
+    margin: 0.625rem;
+    display: block;
+  }
+
+  /* Service section*/
+  .intro-note {
+    font-size: 1.2rem;
+    padding: 4% 2%;
+  }
+}
+
+
 @media only screen and (max-width: 768px) {
   /*mini header*/
   .scroll-nav li {
@@ -763,11 +789,31 @@ input:checked + .slider:before {
   }
 
   /* Slide images*/
+  .slideshow-container {
+    max-width: 80%;
+  }
+
   .img-preg {
     width: 100%;
-    height: 400px;
+    height: 380px;
     margin: 0.625rem;
     display: block;
+  }
+
+  #preg-due-date {
+    margin: 1% 20% 5% 20%;
+  }
+
+  #bmi-toggle {
+    margin: 1rem 20% 0 20%;
+  }
+
+  #bmi-form-container-metric {
+    margin: 0 20% 0% 20%;
+  }
+  
+  #bmi-form-container-standard {
+    margin: 0 20% 0% 20%;
   }
 }
 
@@ -813,13 +859,13 @@ input:checked + .slider:before {
 
   /* slide images */
   .slideshow-container {
-    max-width: 90%;
-    margin-left: 10px;
+    max-width: 95%;
+    margin-left: 2px;
   }
 
   .img-preg {
     width: 100%;
-    height: 350px;
+    height: 300px;
     margin: 0.625rem;
     display: block;
   }
@@ -834,6 +880,22 @@ input:checked + .slider:before {
     padding: 4% 0%;
     width: 100%;
   }
+
+  #preg-due-date {
+    margin: 1% 1% 5% 1%;
+  }
+
+  #bmi-toggle {
+    margin: 1rem 1% 0 1%;
+  }
+
+  #bmi-form-container-metric {
+    margin: 0 1% 0% 1%;
+  }
+  
+  #bmi-form-container-standard {
+    margin: 0 1% 0% 1%;
+  }
 }
 
 @media only screen and (max-width: 425px) {
@@ -845,6 +907,19 @@ input:checked + .slider:before {
   /* service section */
   #article-sect-1 {
     height: 750px;
+  }
+
+  /* slide images */
+  .slideshow-container {
+    margin-left: 0px;
+  }
+
+  .img-preg {
+    height: 300px;
+  }
+
+  .img-preg {
+    height: 300px;
   }
 }
 
@@ -870,8 +945,8 @@ input:checked + .slider:before {
 
   /* slide images*/
   .slideshow-container {
-    max-width: 90%;
-    margin-right: 25px;
+    max-width: 98%;
+    margin-right: 18px;
   }
 
   .slider:before {
@@ -913,24 +988,5 @@ input:checked + .slider:before {
   .bmi-switch {
     width: 56px;
     height: 30px;
-  }
-}
-
-@media only screen and (max-width: 1024px) and (min-width: 768px) {
-  /* Slider images */
-  .slideshow-container {
-    max-width: 80%;
-  }
-
-  .img-preg {
-    width: 100%;
-    margin: 0.625rem;
-    display: block;
-  }
-
-  /* Service section*/
-  .intro-note {
-    font-size: 1.2rem;
-    padding: 4% 2%;
   }
 }

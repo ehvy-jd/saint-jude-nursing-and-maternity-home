@@ -349,6 +349,7 @@ nav {
 #apps {
   text-align: center;
   font-size: 28px;
+  line-height: 1;
   margin: 0% 10%;
   font-weight: bold;
   color: #152137;
@@ -439,7 +440,7 @@ input {
   text-align: center;
   position: relative;
   width: auto;
-  margin: 1rem 20% 0 20%;
+  margin: 5% 20% 0 20%;
   background-color: #152137;
   border-radius: 0.5rem 0.5rem 0 0;
   font-size: 24px;
@@ -801,19 +802,15 @@ input:checked + .slider:before {
   }
 
   #preg-due-date {
-    margin: 1% 20% 5% 20%;
-  }
-
-  #bmi-toggle {
-    margin: 1rem 20% 0 20%;
+    margin: 1% 20% 7% 20%;
   }
 
   #bmi-form-container-metric {
-    margin: 0 20% 0% 20%;
+    margin: 0 20% 2% 20%;
   }
   
   #bmi-form-container-standard {
-    margin: 0 20% 0% 20%;
+    margin: 0 20% 2% 20%;
   }
 }
 
@@ -881,8 +878,13 @@ input:checked + .slider:before {
     width: 100%;
   }
 
+  /* Calculator Apps section*/
+  #apps {
+    margin-top: 5%;
+  }
+ 
   #preg-due-date {
-    margin: 1% 1% 5% 1%;
+    margin: 2% 1% 10% 1%;
   }
 
   #bmi-toggle {
@@ -890,11 +892,11 @@ input:checked + .slider:before {
   }
 
   #bmi-form-container-metric {
-    margin: 0 1% 0% 1%;
+    margin: 0% 1% 10% 1%;
   }
   
   #bmi-form-container-standard {
-    margin: 0 1% 0% 1%;
+    margin: 0 1% 10% 1%;
   }
 }
 

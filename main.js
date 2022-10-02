@@ -89,3 +89,23 @@ let dropDownMenu = () => {
 };
 
 navToggle.addEventListener("click", dropDownMenu);
+
+let service = document.getElementById("ham-nav-sv");
+let app = document.getElementById("ham-nav-ap");
+let contact = document.getElementById("ham-nav-ct");
+
+const closeDropNav = () => {
+  dropNav.style.display = "none";
+  hamTwo.style.display = "block";
+  hamOne.style.transform = "rotate(0deg)";
+  hamOne.style.top = "0px";
+  hamThree.style.transform = "rotate(0deg)";
+  hamThree.style.bottom = "0px";
+  hamOne.style.transition = ".15s ease-in-out";
+  hamThree.style.transition = ".15s ease-in-out";
+  hamTwo.style.transition = ".15s ease-in-out";
+};
+
+service.addEventListener("click", closeDropNav);
+app.addEventListener("click", closeDropNav);
+contact.addEventListener("click", closeDropNav);

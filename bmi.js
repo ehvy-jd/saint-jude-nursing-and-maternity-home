@@ -92,7 +92,7 @@ let calculateBmiStd = () => {
   let heightStd = heightStdf * 12 + heightStdi;
 
   if (heightStdi > 12 || heightStdi < 0) {
-    alert(`The value for inch cannot be greater than 12 or lesser than 0!`);
+    alert(`The value for inch cannot be greater than 12 or less than 0!`);
     resetBmiStd();
   }
 

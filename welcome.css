@@ -185,33 +185,23 @@ nav {
 }
 
 .nav-button {
-  border-color: #ffffff;
-  border-left: 0.5px #152137;
-  border-radius: 0.3125rem;
+  border-color: #152137;
   height: 3.125rem;
   width: 5.625rem;
   font-size: 1.125rem;
   font-weight: bold;
   color: hsl(0, 0%, 100%);
   background-color: #152137;
-  box-shadow: 0.0625rem 0.25rem #152137;
   cursor: pointer;
   margin: 0.125rem;
   font-family: "nunito-font", Helvetica, Arial, sans-serif;
   transition: all 200ms ease-out;
 }
 
-@media (hover: hover) {
-  .nav-button:hover {
-    color: hsl(0, 0%, 100%);
-    text-shadow: 2px 2px 4px #ffffff;
-    font-size: 1.2rem;
-  }
-}
-
-.nav-button:active {
-  margin-top: 0.3125rem;
-  box-shadow: 0rem 0rem;
+.nav-button:hover {
+  color: hsl(0, 0%, 100%);
+  text-shadow: 2px 2px 4px #ffffff;
+  font-size: 1.2rem;
 }
 
 /* banner */
@@ -242,32 +232,12 @@ nav {
   vertical-align: middle;
   width: 100%;
   height: 500px;
-  border: 0.125rem solid hsl(0, 0%, 0%);
-  border-radius: 1.25rem;
 }
 
 .slideshow-container {
   max-width: 60%;
   position: relative;
   margin: auto;
-}
-
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
 }
 
 .dot {
@@ -311,8 +281,8 @@ nav {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  border-top: 2px solid #000000;
-  border-bottom: 2px solid #000000;
+  border-top: 2px solid #ffffff;
+  border-bottom: 2px solid #0077b6;
   margin-top: 50px;
 }
 
@@ -342,7 +312,7 @@ nav {
 }
 
 #apps-container {
-  background-color: hsl(0, 0%, 89%);
+  background-color: #009cf0;
   padding: 5% 0%;
 }
 
@@ -352,7 +322,11 @@ nav {
   line-height: 1;
   margin: 0% 10%;
   font-weight: bold;
-  color: #152137;
+  color: #000000;
+}
+
+label {
+  color: #000000;
 }
 
 input {
@@ -361,12 +335,10 @@ input {
 
 /* Due date calculator*/
 #preg-due-date {
-  border: 2px solid #152137;
   text-align: center;
   margin: 1% 20% 5% 20%;
   background-color: #d6f5ff;
-  color: #152137;
-  border-radius: 0.5rem 0.5rem;
+  color: #000000;
   display: block;
 }
 
@@ -374,8 +346,7 @@ input {
   font-size: 28px;
   padding: 0.5rem 0rem;
   color: #ffffff;
-  background-color: #152137;
-  border-radius: 0.5rem 0.5rem 0 0;
+  background-color: #000000;
 }
 
 #preg-due-date h4 {
@@ -392,9 +363,8 @@ input {
 
 #due-date-div {
   display: none;
-  background-color: #152137;
+  background-color: #ffb703;
   padding: 0 4px;
-  border-radius: 0 0 0.5rem 0.5rem;
 }
 
 #due-date-result {
@@ -404,13 +374,13 @@ input {
 
 #due-date-submit {
   border-radius: 0.3125rem;
-  border-color: #152137;
+  border-color: #000000;
   height: 2.125rem;
   width: 5.625rem;
   font-size: 1rem;
   font-weight: bold;
   color: hsl(0, 0%, 100%);
-  background-color: #152137;
+  background-color: #000000;
   margin-bottom: 1rem;
   cursor: pointer;
 }
@@ -431,7 +401,7 @@ input {
 
 #due-date-submit:hover {
   color: black;
-  background-color: yellow;
+  background-color: #ffb703;
 }
 
 /* toggle switch for body mass index calculator */
@@ -441,8 +411,7 @@ input {
   position: relative;
   width: auto;
   margin: 5% 20% 0 20%;
-  background-color: #152137;
-  border-radius: 0.5rem 0.5rem 0 0;
+  background-color: #000000;
   font-size: 24px;
   color: #ffffff;
   padding: 10px 0;
@@ -480,13 +449,13 @@ input {
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background-color: #152137;
+  background-color: #000000;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
 input:checked + .slider {
-  background-color: #025677;
+  background-color: #009cf0;
 }
 
 input:checked + .slider:before {
@@ -516,18 +485,14 @@ input:checked + .slider:before {
 #bmi-form-container-metric {
   text-align: center;
   margin: 0 20% 0% 20%;
-  border: 2px solid #152137;
   background-color: #d6f5ff;
-  border-radius: 0 0 0.5rem 0.5rem;
   display: none;
 }
 
 #bmi-form-container-standard {
   text-align: center;
   margin: 0 20% 0% 20%;
-  border: 2px solid #152137;
   background-color: #d6f5ff;
-  border-radius: 0 0 0.5rem 0.5rem;
   display: block;
 }
 
@@ -572,14 +537,12 @@ input:checked + .slider:before {
   display: none;
   background-color: #152137;
   padding: 0 4px;
-  border-radius: 0 0 0.5rem 0.5rem;
 }
 
 #bmi-div-s {
   display: none;
   background-color: #152137;
   padding: 0 4px;
-  border-radius: 0 0 0.5rem 0.5rem;
 }
 
 #bmi-result {
@@ -594,26 +557,26 @@ input:checked + .slider:before {
 
 #bmi-submit {
   border-radius: 0.3125rem;
-  border-color: #152137;
+  border-color: #000000;
   height: 2.125rem;
   width: 5.625rem;
   font-size: 1rem;
   font-weight: bold;
   color: hsl(0, 0%, 100%);
-  background-color: #152137;
+  background-color: #000000;
   margin-bottom: 1rem;
   cursor: pointer;
 }
 
 #bmi-submit-s {
   border-radius: 0.3125rem;
-  border-color: #152137;
+  border-color: #000000;
   height: 2.125rem;
   width: 5.625rem;
   font-size: 1rem;
   font-weight: bold;
   color: hsl(0, 0%, 100%);
-  background-color: #152137;
+  background-color: #000000;
   margin-bottom: 1rem;
   cursor: pointer;
 }
@@ -659,8 +622,8 @@ input:checked + .slider:before {
 /* footer */
 #foot {
   position: relative;
-  color: #d6f5ff;
-  background-color: #152137;
+  color: #000000;
+  background-color: #ffffff;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -676,7 +639,7 @@ input:checked + .slider:before {
   text-align: center;
   padding: 10px 0px;
   height: auto;
-  color: #d6f5ff;
+  color: #ffffff;
   background-color: #152137;
   width: 100%;
   z-index: 100;
@@ -724,7 +687,6 @@ input:checked + .slider:before {
     padding: 4% 2%;
   }
 }
-
 
 @media only screen and (max-width: 768px) {
   /*mini header*/
@@ -808,7 +770,7 @@ input:checked + .slider:before {
   #bmi-form-container-metric {
     margin: 0 20% 2% 20%;
   }
-  
+
   #bmi-form-container-standard {
     margin: 0 20% 2% 20%;
   }
@@ -882,7 +844,7 @@ input:checked + .slider:before {
   #apps {
     margin-top: 5%;
   }
- 
+
   #preg-due-date {
     margin: 2% 1% 10% 1%;
   }
@@ -894,7 +856,7 @@ input:checked + .slider:before {
   #bmi-form-container-metric {
     margin: 0% 1% 10% 1%;
   }
-  
+
   #bmi-form-container-standard {
     margin: 0 1% 10% 1%;
   }

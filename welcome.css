@@ -154,7 +154,7 @@ body {
 
 .st-jude {
   max-width: 8.75rem;
-  height: auto;
+  height: 100%;
   padding: 0.01875rem 0rem 0rem 0rem;
 }
 
@@ -727,7 +727,7 @@ input:checked + .slider:before {
   /*Main header*/
   .rectangle-shape {
     width: 100%;
-    height: 4rem;
+    height: 2.25rem;
   }
 
   #landing {
@@ -807,7 +807,7 @@ input:checked + .slider:before {
   /* mini header */
   .rectangle-shape {
     width: 100%;
-    height: 4rem;
+    height: 2.25rem;
   }
 
   #landing {

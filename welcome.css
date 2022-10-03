@@ -340,7 +340,7 @@ input {
   border-radius: 0.3125rem;
   border-color: #0e0e0e;
   height: 2.125rem;
-  width: 5.625rem;
+  width: 9.375rem;
   font-size: 1rem;
   font-weight: bold;
   color: hsl(0, 0%, 100%);
@@ -533,7 +533,7 @@ input:checked + .slider:before {
   border-radius: 0.3125rem;
   border-color: #0e0e0e;
   height: 2.125rem;
-  width: 5.625rem;
+  width: 9.375rem;
   font-size: 1rem;
   font-weight: bold;
   color: hsl(0, 0%, 100%);
@@ -546,7 +546,7 @@ input:checked + .slider:before {
   border-radius: 0.3125rem;
   border-color: #0e0e0e;
   height: 2.125rem;
-  width: 5.625rem;
+  width: 9.375rem;
   font-size: 1rem;
   font-weight: bold;
   color: hsl(0, 0%, 100%);

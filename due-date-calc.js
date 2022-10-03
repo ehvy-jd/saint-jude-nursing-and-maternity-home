@@ -7,6 +7,10 @@ let dueDateReset = document.getElementById("due-date-reset");
 
 const dueDate = () => {
   let lmp = document.getElementById("lmp").value;
+  if (dueDateDiv.style.display === "block") {
+    alert(`Press the reset button!`);
+  }
+
   if (lmp) {
     lmp = new Date(lmp).getTime();
     let due = lmp + 1000 * 24 * 60 * 60 * 280;
@@ -15,7 +19,6 @@ const dueDate = () => {
     dueDateDiv.style.display = "block";
   } else {
     alert(`Select the date for the first day of your last period`);
-    dueDateDiv.style.display = "none";
   }
 };
 

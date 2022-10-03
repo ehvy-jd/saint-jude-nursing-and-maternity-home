@@ -156,9 +156,8 @@ body {
 }
 
 .site-name {
-  margin-top: 5px;
   flex-direction: column;
-  padding: 1rem 0.625rem;
+  padding: 0rem 0.25rem 1rem 0.25rem;
   font-size: 2rem;
   font-weight: bolder;
   line-height: 1.2;
@@ -817,11 +816,6 @@ input:checked + .slider:before {
 
   #dropdown-nav {
     margin-top: 39px;
-  }
-
-  /* Main header */
-  .site-name h2 {
-    font-size: 1.9rem;
   }
   
   /* mini header */

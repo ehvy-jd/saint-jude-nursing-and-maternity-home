@@ -193,15 +193,17 @@ body {
 }
 
 .main-nav li a {
-  color: #ffffff;
-  background-color: #152137;
-  text-decoration: none;
+  color: #152137;
   padding: 12px 12px 12px 12px;
+  text-decoration: underline;
 }
 
 .main-nav li a:hover {
   color: #ffffff;
+  text-decoration: none;
   text-shadow: 2px 2px 4px #ffffff;
+  background-color: #152137;
+  text-decoration: none;
 }
 
 /* banner */
@@ -755,7 +757,14 @@ input:checked + .slider:before {
   }
 
   .main-nav li {
+    margin-top: 18px;
+  }
+
+  .main-nav li a{
     margin-top: 14px;
+    color: #ffffff;
+    background-color: #152137;
+    text-decoration: none;
   }
 
   .site-name h2 {

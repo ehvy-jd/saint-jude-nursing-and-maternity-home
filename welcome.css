@@ -141,69 +141,29 @@ body {
 
 /* main header */
 #landing {
-  display: flex;
+  display: block;
   width: 100%;
   height: 100%;
+  margin: 0 auto;
   background-color: #d6f5ff;
-}
-
-#landing > :nth-child(3) {
-  margin-right: auto;
-  /*This code moves selected child to the right*/
+  text-align: center;
 }
 
 .st-jude {
   max-width: 8.75rem;
   height: 100%;
-  padding: 0.01875rem 0rem 0rem 0rem;
-}
-
-.rectangle-shape {
-  width: 0.3125rem;
-  background-color: #152137;
-  padding: 0rem 0.25rem;
-  height: auto;
+  margin-top: 5px;
 }
 
 .site-name {
   margin-top: 5px;
-  width: auto;
-  display: flex;
   flex-direction: column;
-  padding: 0rem 0.625rem;
+  padding: 1rem 0.625rem;
   font-size: 2rem;
   font-weight: bolder;
   line-height: 1.2;
   color: #152137;
   text-shadow: 2px 2px 4px #0e0e0e;
-}
-
-.main-nav {
-  height: 50px;
-  margin-right: 10px;
-}
-
-.main-nav li {
-  list-style-type: none;
-  display: inline-block;
-  font-size: 1.3rem;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 10px;
-}
-
-.main-nav li a {
-  color: #152137;
-  padding: 12px 12px 12px 12px;
-  text-decoration: underline;
-}
-
-.main-nav li a:hover {
-  color: #ffffff;
-  text-decoration: none;
-  text-shadow: 2px 2px 4px #ffffff;
-  background-color: #152137;
-  text-decoration: none;
 }
 
 /* banner */
@@ -726,51 +686,6 @@ input:checked + .slider:before {
     display: block;
   }
 
-  /*Main header*/
-  .rectangle-shape {
-    width: 100%;
-    height: 2.25rem;
-  }
-
-  #landing {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 29.5rem;
-  }
-
-  #landing > :nth-child(3) {
-    margin-right: 0%;
-  }
-
-  .site-name {
-    flex-wrap: wrap;
-    justify-items: center;
-    align-items: center;
-    width: 100%;
-    border-bottom: 2px solid #152137;
-  }
-
-  .main-nav {
-    height: 250px;
-    margin: 0 auto;
-  }
-
-  .main-nav li {
-    margin-top: 18px;
-  }
-
-  .main-nav li a{
-    margin-top: 14px;
-    color: #ffffff;
-    background-color: #152137;
-    text-decoration: none;
-  }
-
-  .site-name h2 {
-    margin: 0rem 0.25rem;
-  }
-
   /* Banner */
   .banner-note {
     width: 70%;
@@ -813,31 +728,7 @@ input:checked + .slider:before {
     margin: 0 42%;
   }
 
-  /* mini header */
-  .rectangle-shape {
-    width: 100%;
-    height: 2.25rem;
-  }
-
-  #landing {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 29.5rem;
-  }
-
-  #landing > :nth-child(3) {
-    margin-right: 0%;
-  }
-
-  .site-name {
-    flex-wrap: wrap;
-    justify-items: center;
-    align-items: center;
-    width: 100%;
-    border-bottom: 2px solid #152137;
-  }
-
+  /* Main header */
   .site-name h2 {
     margin: 0rem 0.25rem;
   }
@@ -929,10 +820,10 @@ input:checked + .slider:before {
   }
 
   /* Main header */
-  #landing {
-    height: 28.3rem;
+  .site-name h2 {
+    font-size: 1.9rem;
   }
-
+  
   /* mini header */
   .scroll-nav {
     height: 40px;
@@ -954,11 +845,6 @@ input:checked + .slider:before {
   }
 
   /* service section */
-  .site-name h2 {
-    margin: 0rem;
-    font-size: 1.8rem;
-  }
-
   #article-sect-1 {
     height: 745px;
   }

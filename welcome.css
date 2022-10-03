@@ -76,7 +76,6 @@ body {
 }
 
 #dropdown-nav {
-  margin-right: 1000;
   z-index: 100;
   background-color: #d6f5ff;
   display: none;
@@ -88,7 +87,6 @@ body {
 .drop-nav {
   height: 12.5rem;
   text-align: center;
-  margin: 0 45%;
   font-size: 1.3rem;
   font-weight: bold;
 }
@@ -728,11 +726,6 @@ input:checked + .slider:before {
 }
 
 @media only screen and (max-width: 480px) {
-  /* Hamburger dropdown nav*/
-  .drop-nav {
-    margin: 0 42%;
-  }
-
   /* Main header */
   .site-name h2 {
     margin: 0rem 0.25rem;
@@ -790,11 +783,6 @@ input:checked + .slider:before {
 }
 
 @media only screen and (max-width: 425px) {
-  /* hamburger dropdown nav */
-  .drop-nav {
-    margin: 0 40%;
-  }
-
   /* service section */
   #article-sect-1 {
     height: 750px;
@@ -815,11 +803,6 @@ input:checked + .slider:before {
 }
 
 @media only screen and (max-width: 320px) {
-  /* Hamburger dropdown nav*/
-  .drop-nav {
-    margin: 0 38%;
-  }
-
   #dropdown-nav {
     margin-top: 39px;
   }

@@ -175,7 +175,7 @@ body {
   font-weight: bolder;
   line-height: 1.2;
   color: #152137;
-  text-shadow: 2px 2px 4px #000000;
+  text-shadow: 2px 2px 4px #0e0e0e;
 }
 
 nav {
@@ -291,7 +291,7 @@ nav {
   font-size: 1.2rem;
   padding: 4% 2%;
   font-weight: bold;
-  color: #000000;
+  color: #0e0e0e;
   text-align: center;
   background-color: hsla(0, 0%, 100%, 0.8);
   width: 40%;
@@ -322,11 +322,11 @@ nav {
   line-height: 1;
   margin: 0% 10%;
   font-weight: bold;
-  color: #000000;
+  color: #0e0e0e;
 }
 
 label {
-  color: #000000;
+  color: #0e0e0e;
 }
 
 input {
@@ -338,7 +338,7 @@ input {
   text-align: center;
   margin: 1% 20% 5% 20%;
   background-color: #d6f5ff;
-  color: #000000;
+  color: #0e0e0e;
   display: block;
 }
 
@@ -346,7 +346,7 @@ input {
   font-size: 28px;
   padding: 0.5rem 0rem;
   color: #ffffff;
-  background-color: #000000;
+  background-color: #0e0e0e;
 }
 
 #preg-due-date h4 {
@@ -377,13 +377,13 @@ input {
 
 #due-date-submit {
   border-radius: 0.3125rem;
-  border-color: #000000;
+  border-color: #0e0e0e;
   height: 2.125rem;
   width: 5.625rem;
   font-size: 1rem;
   font-weight: bold;
   color: hsl(0, 0%, 100%);
-  background-color: #000000;
+  background-color: #0e0e0e;
   margin-bottom: 1rem;
   cursor: pointer;
 }
@@ -414,7 +414,7 @@ input {
   position: relative;
   width: auto;
   margin: 5% 20% 0 20%;
-  background-color: #000000;
+  background-color: #0e0e0e;
   font-size: 24px;
   color: #ffffff;
   padding: 10px 0;
@@ -456,7 +456,7 @@ input {
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background-color: #000000;
+  background-color: #0e0e0e;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -570,26 +570,26 @@ input:checked + .slider:before {
 
 #bmi-submit {
   border-radius: 0.3125rem;
-  border-color: #000000;
+  border-color: #0e0e0e;
   height: 2.125rem;
   width: 5.625rem;
   font-size: 1rem;
   font-weight: bold;
   color: hsl(0, 0%, 100%);
-  background-color: #000000;
+  background-color: #0e0e0e;
   margin-bottom: 1rem;
   cursor: pointer;
 }
 
 #bmi-submit-s {
   border-radius: 0.3125rem;
-  border-color: #000000;
+  border-color: #0e0e0e;
   height: 2.125rem;
   width: 5.625rem;
   font-size: 1rem;
   font-weight: bold;
   color: hsl(0, 0%, 100%);
-  background-color: #000000;
+  background-color: #0e0e0e;
   margin-bottom: 1rem;
   cursor: pointer;
 }
@@ -635,7 +635,7 @@ input:checked + .slider:before {
 /* footer */
 #foot {
   position: relative;
-  color: #000000;
+  color: #0e0e0e;
   background-color: #ffffff;
   left: 0;
   bottom: 0;

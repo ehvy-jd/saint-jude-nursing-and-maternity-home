@@ -370,6 +370,9 @@ input {
 #due-date-result {
   color: rgb(0, 0, 0);
   padding: 10px 0px;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.2;
 }
 
 #due-date-submit {
@@ -552,11 +555,17 @@ input:checked + .slider:before {
 #bmi-result {
   color: rgb(0, 0, 0);
   padding: 10px 0px;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.2;
 }
 
 #bmi-result-s {
   color: rgb(0, 0, 0);
   padding: 10px 0px;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.2;
 }
 
 #bmi-submit {

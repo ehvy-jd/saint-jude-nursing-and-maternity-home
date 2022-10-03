@@ -274,7 +274,7 @@ body {
 
 #apps-container {
   background-color: #009cf0;
-  padding: 5% 0%;
+  padding: 8% 0% 5% 0%;
 }
 
 #apps {
@@ -817,7 +817,7 @@ input:checked + .slider:before {
   #dropdown-nav {
     margin-top: 39px;
   }
-  
+
   /* mini header */
   .scroll-nav {
     height: 40px;

@@ -178,30 +178,30 @@ body {
   text-shadow: 2px 2px 4px #0e0e0e;
 }
 
-nav {
-  margin-right: 0.125rem;
-  height: 100%;
-  display: flex;
+.main-nav {
+  height: 50px;
+  margin-right: 10px;
 }
 
-.nav-button {
-  border-color: #152137;
-  height: 3.125rem;
-  width: 5.625rem;
-  font-size: 1.125rem;
+.main-nav li {
+  list-style-type: none;
+  display: inline-block;
+  font-size: 1.3rem;
   font-weight: bold;
-  color: hsl(0, 0%, 100%);
-  background-color: #152137;
-  cursor: pointer;
-  margin: 0.125rem;
-  font-family: "nunito-font", Helvetica, Arial, sans-serif;
-  transition: all 200ms ease-out;
+  text-align: center;
+  margin-top: 10px;
 }
 
-.nav-button:hover {
-  color: hsl(0, 0%, 100%);
+.main-nav li a {
+  color: #ffffff;
+  background-color: #152137;
+  text-decoration: none;
+  padding: 12px 12px 12px 12px;
+}
+
+.main-nav li a:hover {
+  color: #ffffff;
   text-shadow: 2px 2px 4px #ffffff;
-  font-size: 1.2rem;
 }
 
 /* banner */
@@ -635,7 +635,7 @@ input:checked + .slider:before {
 /* footer */
 #foot {
   position: relative;
-  color: #0e0e0e;
+  color: #000000;
   background-color: #ffffff;
   left: 0;
   bottom: 0;
@@ -747,6 +747,15 @@ input:checked + .slider:before {
     align-items: center;
     width: 100%;
     border-bottom: 2px solid #152137;
+  }
+
+  .main-nav {
+    height: 250px;
+    margin: 0 auto;
+  }
+
+  .main-nav li {
+    margin-top: 14px;
   }
 
   .site-name h2 {

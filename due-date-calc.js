@@ -18,7 +18,7 @@ const dueDate = () => {
     dueDateResult.innerHTML = "Your due day is " + dueDay + ".";
     dueDateDiv.style.display = "block";
   } else {
-    alert(`Select the date for the first day of your menstrual last period`);
+    alert(`Select the date for the first day of your last menstrual period`);
   }
 };
 

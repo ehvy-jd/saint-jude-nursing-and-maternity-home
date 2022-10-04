@@ -159,7 +159,7 @@ let calculateBmiStd = () => {
       ".<br> According to the World Health Organisation recommendations on Body Mass Index, your BMI falls under the Obese category.";
   } else {
     alert(
-      `Make sure all fields are filled in correctly with the value for inch no greater than 12 or less than 0!`
+      `Make sure all fields are filled in correctly with the value for inches no greater than 12 or less than 0!`
     );
     resetBmiStd();
   }

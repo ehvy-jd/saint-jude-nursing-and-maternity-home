@@ -11,7 +11,13 @@ let calculateBmiMet = () => {
   // calculate bmi
   height = parseFloat(height);
   weight = parseFloat(weight);
-  let bmi = (weight / (height / 100) ** 2).toFixed(1);
+  let bmi;
+  if (height > 0 && weight > 0) {
+    bmi = (weight / (height / 100) ** 2).toFixed(1);
+  } else {
+    alert(`Make sure all fields are filled in correctly!`);
+    resetBmiMet();
+  }
 
   // superscript bmi S.I. unit
   let superScript = "\u00B2";
@@ -52,9 +58,6 @@ let calculateBmiMet = () => {
       "kg/m" +
       superScript +
       ".<br> According to the World Health Organisation recommendations on Body Mass Index, your BMI falls under the Obese category.";
-  } else {
-    alert(`Make sure all fields are filled in correctly!`);
-    resetBmiMet();
   }
 };
 
@@ -84,17 +87,7 @@ let calculateBmiStd = () => {
   heightStdf = parseFloat(heightStdf);
   heightStdi = parseFloat(heightStdi);
 
-  if (weightStd === 0 || heightStdf === 0) {
-    alert(`Make sure all fields are filled in correctly!`);
-    resetBmiStd();
-  }
-
   let heightStd = heightStdf * 12 + heightStdi;
-
-  if (heightStdi > 12 || heightStdi < 0) {
-    alert(`The value for inch cannot be greater than 12 or less than 0!`);
-    resetBmiStd();
-  }
 
   // calculate bmi
   let bmi = ((weightStd / heightStd ** 2) * 703).toFixed(1);
@@ -106,7 +99,13 @@ let calculateBmiStd = () => {
     alert(`Press the reset button!`);
   }
 
-  if (bmi <= 18.4 && heightStdi <= 12 && heightStdi >= 0) {
+  if (
+    bmi <= 18.4 &&
+    heightStdi <= 12 &&
+    heightStdi >= 0 &&
+    weightStd > 0 &&
+    heightStdf > 0
+  ) {
     bmiDivStd.style.display = "block";
     bmiResultStd.innerHTML =
       "Your BMI is " +
@@ -114,7 +113,14 @@ let calculateBmiStd = () => {
       "kg/m" +
       superScript +
       ".<br> According to the World Health Organisation recommendations on Body Mass Index, your BMI falls under the underweight category.";
-  } else if (bmi >= 18.5 && bmi <= 24.9 && heightStdi <= 12 && heightStdi >= 0) {
+  } else if (
+    bmi >= 18.5 &&
+    bmi <= 24.9 &&
+    heightStdi <= 12 &&
+    heightStdi >= 0 &&
+    weightStd > 0 &&
+    heightStdf > 0
+  ) {
     bmiDivStd.style.display = "block";
     bmiResultStd.innerHTML =
       "Your BMI is " +
@@ -122,7 +128,14 @@ let calculateBmiStd = () => {
       "kg/m" +
       superScript +
       ".<br> According to the World Health Organisation recommendations on Body Mass Index, your BMI falls under the normal weight category.";
-  } else if (bmi >= 25 && bmi <= 29.9 && heightStdi <= 12 && heightStdi >= 0) {
+  } else if (
+    bmi >= 25 &&
+    bmi <= 29.9 &&
+    heightStdi <= 12 &&
+    heightStdi >= 0 &&
+    weightStd > 0 &&
+    heightStdf > 0
+  ) {
     bmiDivStd.style.display = "block";
     bmiResultStd.innerHTML =
       "Your BMI is " +
@@ -130,7 +143,13 @@ let calculateBmiStd = () => {
       "kg/m" +
       superScript +
       ".<br> According to the World Health Organisation recommendations on Body Mass Index, your BMI falls under the Pre-Obese category.";
-  } else if (bmi > 30 && heightStdi <= 12 && heightStdi >= 0) {
+  } else if (
+    bmi > 30 &&
+    heightStdi <= 12 &&
+    heightStdi >= 0 &&
+    weightStd > 0 &&
+    heightStdf > 0
+  ) {
     bmiDivStd.style.display = "block";
     bmiResultStd.innerHTML =
       "Your BMI is " +
@@ -139,7 +158,9 @@ let calculateBmiStd = () => {
       superScript +
       ".<br> According to the World Health Organisation recommendations on Body Mass Index, your BMI falls under the Obese category.";
   } else {
-    alert(`Make sure all fields are filled in correctly!`);
+    alert(
+      `Make sure all fields are filled in correctly with the value for inch no greater than 12 or less than 0!`
+    );
     resetBmiStd();
   }
 };

@@ -658,6 +658,7 @@ input:checked + .slider:before {
   .intro-note {
     font-size: 1.2rem;
     padding: 4% 2%;
+    width: 50%;
   }
 }
 
@@ -693,6 +694,7 @@ input:checked + .slider:before {
   .intro-note {
     font-size: 1.2rem;
     padding: 4% 2%;
+    width: 70%;
   }
 
   /* Slide images*/

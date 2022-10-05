@@ -150,7 +150,7 @@ body {
 
 .st-jude {
   width: 8.75rem;
-  height: 12rem;
+  height: 12.375rem;
   margin-top: 5px;
 }
 
@@ -237,7 +237,7 @@ body {
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.5)
     ),
-    url("../images/services-background.jpg");
+    url("../images/services-background.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

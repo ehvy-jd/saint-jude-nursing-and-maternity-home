@@ -1,0 +1,6 @@
+User-agent: *
+disallow: /cgi-bin/
+disallow: /images/
+allow: /images/SJNMH.png
+disallow: /css/
+disallow: /js/

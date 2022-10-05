@@ -149,7 +149,7 @@ body {
 }
 
 .st-jude {
-  max-width: 8.75rem;
+  width: 8.75rem;
   height: 12rem;
   margin-top: 5px;
 }
@@ -261,13 +261,16 @@ body {
 
 .intro-note li {
   list-style-type: none;
+  border-bottom: 1px solid #717171;
+  padding: 10px 0px;
 }
 
 .intro-note h3 {
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   font-size: 28px;
   text-decoration: underline;
   font-weight: bold;
+  border-bottom: 1px solid #717171;
 }
 
 #apps-container {

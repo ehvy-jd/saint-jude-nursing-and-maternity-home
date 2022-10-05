@@ -11,13 +11,8 @@ let calculateBmiMet = () => {
   // calculate bmi
   height = parseFloat(height);
   weight = parseFloat(weight);
-  let bmi;
-  if (height > 0 && weight > 0) {
-    bmi = (weight / (height / 100) ** 2).toFixed(1);
-  } else {
-    alert(`Make sure all fields are filled in correctly!`);
-    resetBmiMet();
-  }
+
+  let bmi = (weight / (height / 100) ** 2).toFixed(1);
 
   // superscript bmi S.I. unit
   let superScript = "\u00B2";
@@ -26,7 +21,7 @@ let calculateBmiMet = () => {
     alert(`Press the reset button`);
   }
 
-  if (bmi <= 18.4) {
+  if (bmi <= 18.4 && height > 0 && weight > 0) {
     bmiDiv.style.display = "block";
     bmiResult.innerHTML =
       "Your BMI is " +
@@ -34,7 +29,7 @@ let calculateBmiMet = () => {
       "kg/m" +
       superScript +
       ".<br> According to the World Health Organisation recommendations on Body Mass Index, your BMI falls under the underweight category.";
-  } else if (bmi >= 18.5 && bmi <= 24.9) {
+  } else if (bmi >= 18.5 && bmi <= 24.9 && height > 0 && weight > 0) {
     bmiDiv.style.display = "block";
     bmiResult.innerHTML =
       "Your BMI is " +
@@ -42,7 +37,7 @@ let calculateBmiMet = () => {
       "kg/m" +
       superScript +
       ".<br> According to the World Health Organisation recommendations on Body Mass Index, your BMI falls under the normal weight category.";
-  } else if (bmi >= 25 && bmi <= 29.9) {
+  } else if (bmi >= 25 && bmi <= 29.9 && height > 0 && weight > 0) {
     bmiDiv.style.display = "block";
     bmiResult.innerHTML =
       "Your BMI is " +
@@ -50,7 +45,7 @@ let calculateBmiMet = () => {
       "kg/m" +
       superScript +
       ".<br> According to the World Health Organisation recommendations on Body Mass Index, your BMI falls under the Pre-Obese category.";
-  } else if (bmi > 30) {
+  } else if (bmi > 30 && height > 0 && weight > 0) {
     bmiDiv.style.display = "block";
     bmiResult.innerHTML =
       "Your BMI is " +
@@ -58,6 +53,9 @@ let calculateBmiMet = () => {
       "kg/m" +
       superScript +
       ".<br> According to the World Health Organisation recommendations on Body Mass Index, your BMI falls under the Obese category.";
+  } else {
+    alert(`Make sure all fields are filled in correctly!`);
+    resetBmiMet();
   }
 };
 

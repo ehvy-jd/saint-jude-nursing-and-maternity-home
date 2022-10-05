@@ -619,9 +619,9 @@ input:checked + .slider:before {
 
 #notice-button {
   color: white;
-  background-color: red;
+  background-color: #ad0000;
   padding: 2px 4px;
-  border-color: red;
+  border-color: #ad0000;
   border-radius: 4px;
   font-weight: bold;
   font-size: 1rem;

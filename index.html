@@ -163,7 +163,13 @@
             >First day of your last menstrual period</label
           >
           <br />
-          <input type="date" id="lmp" name="lmp" min="2010-01-01" />
+          <input
+            type="date"
+            id="lmp"
+            name="lmp"
+            min="2010-01-01"
+            aria-label="Select date from calender"
+          />
           <br />
           <button id="due-date-submit">Calculate</button>
           <div id="due-date-div">
@@ -207,6 +213,7 @@
                   name="Weight"
                   id="weight"
                   placeholder="0.0"
+                  aria-label="Enter value for weight in kilograms"
                 />
                 <br />
                 <label> Body Height in centimeters</label>
@@ -216,6 +223,7 @@
                   name="height"
                   id="height"
                   placeholder="0.0"
+                  aria-label="Enter value for height in centimeters"
                 />
                 <br />
                 <button id="bmi-submit">Calculate</button>
@@ -248,6 +256,7 @@
                   name="Weight"
                   id="weight-s"
                   placeholder="0.0"
+                  aria-label="Enter value for weight in pounds"
                 />
                 <br />
                 <label> Body Height in feet and inches</label>
@@ -258,6 +267,7 @@
                   name="height"
                   id="height-ft-s"
                   placeholder="0"
+                  aria-label="Enter value for height in feet"
                 />
                 <label>in: </label>
                 <input
@@ -265,6 +275,7 @@
                   name="height"
                   id="height-in-s"
                   placeholder="0"
+                  aria-label="Enter value for height in inches"
                 />
                 <br />
                 <button id="bmi-submit-s">Calculate</button>

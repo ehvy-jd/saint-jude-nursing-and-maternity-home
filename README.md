@@ -1,2 +1,2 @@
-# st.jude Nursing and Maternity Home
+# ST. Jude Nursing and Maternity Home
 www.saintjudenmh.com
